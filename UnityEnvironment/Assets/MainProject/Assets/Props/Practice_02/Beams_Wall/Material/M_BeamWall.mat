@@ -8,16 +8,19 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_BeamWall
-  m_Shader: {fileID: 4800000, guid: 0e9d5a909a1f7e84882a534d0d11e49f, type: 3}
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ValidKeywords:
-  - _DISABLE_DECALS
-  - _DISABLE_SSR_TRANSPARENT
+  - _METALLICSPECGLOSSMAP
+  - _NORMALMAP
+  - _OCCLUSIONMAP
+  - _PARALLAXMAP
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
-  stringTagMap: {}
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
@@ -27,11 +30,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: fc783d755befe0e41b1d97ea9fd926da, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0e562f9f0d8214d48bbb7950a8c0bb9b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 99fd618ae8ab80c42b9df6f34aa4c4e4, type: 3}
+        m_Texture: {fileID: 2800000, guid: ee0b207e918754d45adb8254d46fbcff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -51,23 +54,23 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: fc783d755befe0e41b1d97ea9fd926da, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0e562f9f0d8214d48bbb7950a8c0bb9b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 0c18341f291060a47be107688046499c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 40a94fba3759356469eb3bee55a64f17, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: a8169e021ffe4a9458cf2db95c55f7c5, type: 3}
+        m_Texture: {fileID: 2800000, guid: d36bef06fea11e64697df30063dda733, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 523c81d0dc99c47408ff260675b4ffa2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 142ff0c0d2bddc1409f4fe8e7e7b0b9b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
-        m_Texture: {fileID: 2800000, guid: 9e9d8ebffc16ead42b8fb5e14310a937, type: 3}
+        m_Texture: {fileID: 2800000, guid: 142ff0c0d2bddc1409f4fe8e7e7b0b9b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -127,7 +130,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _Smoothness: 0.5
+    - _Smoothness: 0.2
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
