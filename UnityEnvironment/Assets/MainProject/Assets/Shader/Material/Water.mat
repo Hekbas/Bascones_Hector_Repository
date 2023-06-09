@@ -11,7 +11,7 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: 4b56174fe85a7a744bff0d5bac241189, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -79,7 +79,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _Alpha_Color_A: 0.42
+    - _Alpha_Color_A: 1.17
     - _Alpha_Color_B: 0.37
     - _Blend: 0
     - _BumpScale: 1
@@ -87,7 +87,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Depth: 12.9
+    - _Depth: 13.33
     - _DepthFalloff: 0.15
     - _Depth_Falloff: 1.8
     - _DetailAlbedoMapScale: 1
@@ -109,18 +109,18 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RefractionIntensity: 0
-    - _RefractionOffsetU: 0
-    - _RefractionOffsetV: 0
-    - _RefractionTileU: 0
-    - _RefractionTileV: 0
+    - _RefractionIntensity: 1
+    - _RefractionOffsetU: 0.2
+    - _RefractionOffsetV: 0.2
+    - _RefractionTileU: 2
+    - _RefractionTileV: 5
     - _ShoreLineWidth: 4.36
-    - _Smoothness: 8.79
+    - _Smoothness: 0.62
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _Waves: 0
+    - _Waves: 1
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
